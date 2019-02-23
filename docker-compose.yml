@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build: .
+    tty: true
+    volumes:
+      - ".:/app"
+      # exclude volumes
+      - ex_git:/app/.git
+    ports:
+      - "3000:3000"
+volumes:
+  ex_git:
