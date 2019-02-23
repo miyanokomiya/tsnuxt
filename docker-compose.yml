@@ -9,5 +9,6 @@ services:
       - ex_git:/app/.git
     ports:
       - "3000:3000"
+      - "9001:9001"
 volumes:
   ex_git:
